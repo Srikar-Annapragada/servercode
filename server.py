@@ -5,7 +5,7 @@ from fastai.tabular.all import *
 from fastai.collab import *
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = True
+app.config["DEBUG"] = False
 
 learn = load_learner('./ratings_model(1).pkl')
 def predict(userId, movieId):
